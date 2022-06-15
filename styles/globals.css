@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700;900&display=swap');
 
 .bg-main {
     border: 0px;
@@ -29,11 +29,35 @@
 }
 
 .bg-primary {
-    background: #CFF629;
+    background: #696df6;
+}
+
+.bg-secondary {
+    background: #cc70d8;
+}
+
+.bg-third {
+    background: #ffbc00;
 }
 
 .text-primary {
-    color: #CFF629
+    color: #696df6
+}
+
+.text-secondary {
+    color: #cc70d8
+}
+
+.text-secondary-light {
+    color: #e9a8f0
+}
+
+.bg-secondary-light {
+    color: #e9a8f0
+}
+
+.text-third {
+    color: #ffbc00
 }
 
 .bg-main {
