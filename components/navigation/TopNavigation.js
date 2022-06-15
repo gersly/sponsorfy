@@ -82,9 +82,8 @@ export default function TopNavigation(props) {
                                 <div className="flex-shrink-0">
                                     <button
                                         type="button"
-                                        className="inline-flex my-2 items-center px-6 py-2.5 border border-transparent text-xl 
-                        font-base rounded-full shadow-sm text-white bg-gray-900 hover:bg-indigo-700 
-                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+                        font-base rounded-full shadow-sm text-secondary-dark bg-secondary-light"
                                     >
                                         Get Started
                                     </button>
