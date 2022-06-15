@@ -73,7 +73,7 @@ function ProfileMinimalistic(props) {
     }, [data, selected]);
 
     return (
-        <div className='md:h-auto h-auto w-screen py-[10vh]'>
+        <div className='md:min-h-screen h-auto w-screen py-[10vh]'>
             <Head>
             </Head>
             <div className="grid grid-cols-4 gap-4 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-6 py-2">
@@ -103,7 +103,7 @@ function ProfileMinimalistic(props) {
                         {showData.map((item, index) =>
                             <div className='w-full h-[6vh] col-span-2 grid grid-cols-2 gap-2 items-center' key={index}>
                                 <div className='md:col-span-1 col-span-1 text-gray-800'>
-                                    <p className='font-semibold text-xl'>{item.name}</p>
+                                    <p className='font-medium text-lg'>{item.name}</p>
                                 </div>
                                 <div className='md:col-span-1 col-span-1 text-gray-800'>
                                     <p className='font-base text-lg'>{item.value}</p>
@@ -114,7 +114,7 @@ function ProfileMinimalistic(props) {
                 </div>
 
 
-                <div className='md:col-span-2 col-span-4 flex flex-col items-start justify-start space-y-3 bg-gray-100'>
+                <div className='md:col-span-2 col-span-4 flex flex-col items-center justify-start space-y-3 bg-gray-100'>
                     {/* <img src={spotify.thumbnail_url} layout="fill" /> */}
                     <span className=''>
 
@@ -152,7 +152,7 @@ function ProfileMinimalistic(props) {
                                                         <span className=' col-span-3'>
                                                             <RadioGroup.Label
                                                                 as="span"
-                                                                className={classNames(checked ? 'text-gray-900' : 'text-gray-900', 'block text-xl font-medium')}
+                                                                className={classNames(checked ? 'text-gray-900' : 'text-gray-900', 'block text-lg')}
                                                             >
                                                                 {setting.name}
                                                             </RadioGroup.Label>
@@ -174,13 +174,14 @@ function ProfileMinimalistic(props) {
                                 ))}
                             </div>
                         </RadioGroup>
+                        <h3 className='md:text-6xl text-3xl font-semibold text-gray-900 md:py-10 py-5'>€{selected.price} <span className='text-xl text-gray-400 font-base'>per episode</span></h3>
                         <div className='grid grid-cols-3 gap-4 w-full'>
                             <button
                                 type="button"
                                 className="col-span-2 inline-flex justify-center items-center px-6 py-3 border border-transparent text-xl font-medium rounded-xl shadow-sm 
                         text-white bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
-                                Pay ${selected.price}
+                                Pay Now
                             </button>
                             <button
                                 type="button"

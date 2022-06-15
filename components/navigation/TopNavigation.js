@@ -25,7 +25,14 @@ function classNames(...classes) {
 export default function TopNavigation(props) {
     const { bg } = props
     return (
-        <Disclosure as="nav" style={{ background: bg ? bg : '#F4F4F4', position: 'fixed', width: '100%' }}>
+        <Disclosure as="nav" style={{
+            background: bg ? bg : '#F4F4F4',
+            position: 'fixed',
+            width: '100%',
+            zIndex: 50,
+            paddingTop: '10px',
+            paddingBottom: '10px'
+        }}>
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,7 +83,7 @@ export default function TopNavigation(props) {
                                     <button
                                         type="button"
                                         className="inline-flex my-2 items-center px-6 py-2.5 border border-transparent text-xl 
-                        font-medium rounded-xl shadow-sm text-white bg-gray-900 hover:bg-indigo-700 
+                        font-base rounded-full shadow-sm text-white bg-gray-900 hover:bg-indigo-700 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
                                         Get Started

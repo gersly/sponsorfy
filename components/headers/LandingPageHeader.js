@@ -27,7 +27,7 @@ export default function LandingPageHeader() {
 
                 <div className="grid grid-cols-6 gap-4 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-6 py-2">
                     <div className='md:col-span-3 col-span-6 flex flex-col justify-center items-start h-full py-10 md:py-5'>
-                        <h1 className='md:text-6xl text-4xl font-[700] md:w-[85%] w-full text-gray-900'>
+                        <h1 className='md:text-6xl text-4xl font-bold md:w-[85%] w-full text-gray-900'>
                             Monitize your podcast, blog or YouTube channel
                         </h1>
                         <p className='my-3 md:text-2xl text-xl text-gray-500'>
@@ -36,7 +36,7 @@ export default function LandingPageHeader() {
                         <button
                             type="button"
                             className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
-                        font-medium rounded-xl shadow-sm text-gray-900 bg-primary hover:bg-gray-700 
+                        font-base rounded-full shadow-sm text-white bg-primary hover:bg-gray-700 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                         >
                             Create my profile
@@ -44,7 +44,7 @@ export default function LandingPageHeader() {
                         <button
                             type="button"
                             className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
-                        font-medium rounded-xl shadow-sm text-gray-900 bg-transparent 
+                        font-base rounded-full shadow-sm text-gray-900 bg-transparent 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                         >
                             View example
@@ -53,7 +53,7 @@ export default function LandingPageHeader() {
                     <div className='md:col-span-3 col-span-6 p-4 md:flex md:flex-col md:justify-center md:items-center h-full w-full'>
                         <div className="grid md:grid-cols-2 grid-cols-2 gap-2 w-full h-full bg-transparent">
                             {items.map((item, index) =>
-                                <div key={index} className="w-full bg-gray-50 md:col-span-1 col-span-3 md:h-[320px] rounded-xl"
+                                <div key={index} className="w-full bg-gray-50 md:col-span-1 col-span-3 md:h-[320px] rounded-2xl"
                                     style={{
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center center',
@@ -62,9 +62,9 @@ export default function LandingPageHeader() {
                                     }}>
                                     <div className="bg-gradient-to-b 
                                 from-gray-900  via-transparent  
-                                to-gray-900 h-full w-full rounded-xl flex
+                                to-gray-900 h-full w-full rounded-2xl flex
                                 flex-col justify-between p-4">
-                                        <p className='font-semibold font-sans text-white text-xl'>{item.title}</p>
+                                        <p className='font-semibold text-white text-xl'>{item.title}</p>
                                         <div className='flex flex-row justify-between items-center'>
 
                                             <div>
@@ -74,7 +74,7 @@ export default function LandingPageHeader() {
                                             <button
                                                 type="button"
                                                 className="rounded-full flex flex-col items-center justify-center h-8 w-8
-                                             text-gray-900 bg-primary hover:bg-red-500 "
+                                             text-white bg-third "
                                             >
                                                 <i className="ri-play-fill ri-lg"></i>
 
