@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import LandingPageHeader from '../components/headers/LandingPageHeader'
+import TestimonialsCircle from '../components/testimonials/TestimonialsCircle'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
 
       <LandingPageHeader />
+      {/* Features Section */}
       <div className='h-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5'>
         <div className="grid grid-cols-4 gap-4 flex-col justify-center items-center md:py-10 py-5">
           <div className='md:col-span-2 col-span-4'>
@@ -29,44 +31,44 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 gap-4 flex-col justify-center items-center md:py-10 py-5">
           <div className='md:col-span-1 col-span-3'>
-            <div className='border border-gray-300 hover:bg-gray-100 rounded-2xl p-4 h-[280px] md:h-[300px]'>
+            <div className='border-0 bg-primary-light rounded-3xl p-4 h-[280px] md:h-[300px]'>
               <span className="my-3 inline-flex items-center h-12 w-12 rounded-full justify-center 
-              text-3xl font-medium bg-primary text-white">
+              text-3xl font-medium bg-gray-900 text-white">
                 <i className="ri-share-circle-line"></i>
               </span>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
+              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-primary-dark'>
                 Public share-able link
               </h2>
-              <p className='my-3 md:text-xl text-md text-gray-500'>
+              <p className='my-3 md:text-xl text-md text-white'>
                 Your link will be shareable across multiple channels and platforms.
                 You can place it anywhere online.
               </p>
             </div>
           </div>
           <div className='md:col-span-1 col-span-3'>
-            <div className='border border-gray-300 hover:bg-gray-100 rounded-2xl p-4  h-[280px] md:h-[300px]'>
+            <div className='border-0 bg-secondary-light  rounded-3xl p-4  h-[280px] md:h-[300px]'>
               <span className="my-3 inline-flex items-center h-12 w-12 rounded-full justify-center 
-              text-3xl font-medium bg-secondary text-white">
+              text-3xl font-medium bg-gray-900 text-white">
                 <i className="ri-profile-line"></i>
               </span>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
+              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-secondary-dark'>
                 Your own custom profile
               </h2>
-              <p className='my-3 md:text-xl text-md text-gray-500'>
+              <p className='my-3 md:text-xl text-md text-white'>
                 Customize your profile to match your vibe and brand colors.
               </p>
             </div>
           </div>
           <div className='md:col-span-1 col-span-3'>
-            <div className='border border-gray-300 hover:bg-gray-100 rounded-2xl p-4  h-[280px] md:h-[300px]'>
+            <div className='border-0 bg-third-light rounded-3xl p-4  h-[280px] md:h-[300px]'>
               <span className="my-3 inline-flex items-center h-12 w-12 rounded-full justify-center 
-              text-3xl font-medium bg-third text-white">
+              text-3xl font-medium bg-gray-900 text-white">
                 <i className="ri-price-tag-3-line"></i>
               </span>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
+              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-third-dark'>
                 Custom pricing
               </h2>
-              <p className='my-3 md:text-xl text-md text-gray-500'>
+              <p className='my-3 md:text-xl text-md text-white'>
                 Do you have multiple ad slots per episode or article ? Feel free to
                 adjust pricing as you see fit.
               </p>
@@ -74,20 +76,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div>
-
-      </div> */}
+      {/* End of Features Section */}
+      {/* Pricing Section */}
       <div className='h-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5'>
         <h1 className='md:text-6xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
           Pricing
         </h1>
         <p className='my-3 md:text-xl text-md text-gray-500'>
-          Just one plan. For everything we have to offer.
+          Just one plan. For everything.
         </p>
+
         <div className='grid md:grid-cols-3 grid-cols-1 gap-4 items-center md:my-10 my-5'>
-          <div className='md:col-span-1 col-span-1 border border-gray-300 rounded-2xl min-h-[380px]'>
-            <div className='bg-gray-100 p-6 rounded-tr-2xl rounded-tl-2xl '>
+          <div className='md:col-span-1 col-span-1 border border-gray-100 rounded-3xl min-h-[380px]'>
+            <div className='bg-gray-100 p-6 rounded-tr-3xl rounded-tl-3xl '>
               <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
                 Free
               </h2>
@@ -97,6 +98,14 @@ export default function Home() {
               <p className='my-3 md:text-xl text-md text-gray-500'>
                 Enough to get you started.
               </p>
+              <button
+                type="button"
+                className="inline-flex my-2 items-center px-6 py-3 border border-gray-200 text-xl 
+                        font-base rounded-full shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 
+                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              >
+                Select Free
+              </button>
             </div>
             <div className="grid grid-cols-1 gap-4 space-y-1 p-6">
               <div className='col-span-1 flex flex-row items-center text-xl h-[70px]'>
@@ -117,17 +126,24 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='md:col-span-2 col-span-1 border border-gray-300 rounded-2xl min-h-[380px]'>
-            <div className='bg-secondary p-6 rounded-tr-2xl rounded-tl-2xl '>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-white'>
+          <div className='md:col-span-2 col-span-1 border border-gray-100 rounded-3xl min-h-[380px]'>
+            <div className='bg-secondary-light p-6 rounded-tr-3xl rounded-tl-3xl '>
+              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-secondary-dark'>
                 Pro
               </h2>
-              <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-white'>
-                € 10 <span className='text-base text-white'>per month</span>
+              <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-secondary-dark'>
+                € 10 <span className='text-base text-secondary-dark'>per month</span>
               </h2>
-              <p className='my-3 md:text-xl text-md text-white'>
+              <p className='my-3 md:text-xl text-md text-secondary-dark'>
                 For content creators, brands and SMBs
               </p>
+              <button
+                type="button"
+                className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+                        font-base rounded-full shadow-sm text-secondary-light bg-secondary-dark"
+              >
+                Select Pro
+              </button>
             </div>
             <div className="grid grid-cols-2 gap-4 space-y-1 p-6 ">
               <div className='md:col-span-1 col-span-2 flex flex-row items-center text-xl h-[70px]'>
@@ -167,6 +183,27 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* End of Pricing Section */}
+      {/* Testimonials Section */}
+      <div className='h-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5'>
+        <div className="grid grid-cols-4 gap-4 flex-col justify-center items-center md:py-10 py-5">
+          <div className='md:col-span-2 col-span-4'>
+            <h1 className='md:text-6xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
+              See what others are saying
+            </h1>
+          </div>
+          <div className='md:col-span-2 col-span-4'>
+            <p className='my-3 md:text-2xl text-xl text-gray-500'>
+              Trust by some names you might be familiar with 😉
+            </p>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-6 grid-cols-2 md:gap-4 gap-2 flex-col justify-center items-center md:py-10 py-5">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((testimonial, index) => <TestimonialsCircle key={index} index={index} />)}
+        </div>
+      </div>
+
+      {/* End of Testimonials Section */}
 
       <footer className={styles.footer}>
         <a

@@ -91,15 +91,15 @@ function ProfileMinimalistic(props) {
 
                     </div> */}
                     <h2 className='md:text-6xl text-3xl font-semibold text-gray-900 '>{spotify.title}</h2>
-                    <p className='md:text-xl text-lg font-base text-gray-700'>on {spotify.provider_name}</p>
-                    <p className='md:text-2xl text-xl font-base text-gray-500'>Enim in mollit dolore sint reprehenderit
+                    <p className='md:text-lg text-md font-base text-gray-700'>on {spotify.provider_name}</p>
+                    <p className='md:text-xl text-lg font-base text-gray-500'>Enim in mollit dolore sint reprehenderit
                         nisi do ea qui sunt labore dolore aliqua.
                         Ut esse aliqua do cillum mollit. Nisi nisi commodo aliqua est ea culpa commodo sunt.
                         Aliqua nostrud nulla sit consequat excepteur duis esse eiusmod occaecat minim.
                         Consequat ipsum ut nostrud laborum nulla fugiat pariatur irure consequat occaecat.
                     </p>
 
-                    <div className='bg-white rounded-xl px-6 py-2 grid grid-cols-2 gap-2 items-center w-full'>
+                    <div className='bg-white rounded-3xl px-6 py-2 grid grid-cols-2 gap-2 items-center w-full'>
                         {showData.map((item, index) =>
                             <div className='w-full h-[6vh] col-span-2 grid grid-cols-2 gap-2 items-center' key={index}>
                                 <div className='md:col-span-1 col-span-1 text-gray-800'>
@@ -119,17 +119,17 @@ function ProfileMinimalistic(props) {
                     <span className=''>
 
                         <SpotifyEmbed />
-                        <RadioGroup value={selected} onChange={setSelected} className="w-full my-5 rounded-xl">
+                        <RadioGroup value={selected} onChange={setSelected} className="w-full my-5 rounded-3xl">
                             <RadioGroup.Label className="sr-only">Pricing</RadioGroup.Label>
-                            <div className="bg-white rounded-xl -space-y-px">
+                            <div className="bg-white rounded-3xl -space-y-px">
                                 {settings.map((setting, settingIdx) => (
                                     <RadioGroup.Option
                                         key={setting.name}
                                         value={setting}
                                         className={({ checked }) =>
                                             classNames(
-                                                settingIdx === 0 ? 'rounded-tl-xl rounded-tr-xl' : '',
-                                                settingIdx === settings.length - 1 ? 'rounded-bl-xl rounded-br-xl shadow-sm' : '',
+                                                settingIdx === 0 ? 'rounded-tl-3xl rounded-tr-3xl' : '',
+                                                settingIdx === settings.length - 1 ? 'rounded-bl-3xl rounded-br-3xl shadow-sm' : '',
                                                 checked ? 'bg-gray-100 border-gray-200 z-10' : 'border-gray-200',
                                                 'relative border p-4 flex cursor-pointer focus:outline-none'
                                             )
@@ -178,14 +178,14 @@ function ProfileMinimalistic(props) {
                         <div className='grid grid-cols-3 gap-4 w-full'>
                             <button
                                 type="button"
-                                className="col-span-2 inline-flex justify-center items-center px-6 py-3 border border-transparent text-xl font-medium rounded-xl shadow-sm 
+                                className="col-span-2 inline-flex justify-center items-center px-6 py-3 border border-transparent text-xl font-medium rounded-full shadow-sm 
                         text-white bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
                                 Pay Now
                             </button>
                             <button
                                 type="button"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-gray-200 text-xl font-medium rounded-xl shadow-sm 
+                                className="inline-flex items-center justify-center px-6 py-3 border border-gray-200 text-xl font-medium rounded-full shadow-sm 
                         text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
                                 Explore
