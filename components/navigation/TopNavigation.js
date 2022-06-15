@@ -8,8 +8,9 @@ const user = {
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
+    { name: 'Discover Creators', href: '#', current: false },
     { name: 'Pricing', href: '#', current: false },
-    { name: 'Frequently Asked Questions', href: '#', current: false },
+    { name: 'Blog', href: '#', current: false }
 ]
 const userNavigation = [
     { name: 'Your Profile', href: '#' },
@@ -21,9 +22,10 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function TopNavigation() {
+export default function TopNavigation(props) {
+    const { bg } = props
     return (
-        <Disclosure as="nav" style={{ background: '#F4F4F4' }}>
+        <Disclosure as="nav" style={{ background: bg ? bg : '#F4F4F4', position: 'fixed', width: '100%' }}>
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +43,7 @@ export default function TopNavigation() {
                                     </Disclosure.Button>
                                 </div>
                                 <div className="flex-shrink-0 flex items-center">
-                                    <img
+                                    {/* <img
                                         className="block lg:hidden h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                                         alt="Workflow"
@@ -50,7 +52,8 @@ export default function TopNavigation() {
                                         className="hidden lg:block h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                                         alt="Workflow"
-                                    />
+                                    /> */}
+                                    <p className='text-gray-900 text-lg'>sponsorfy</p>
                                 </div>
                                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                                     {navigation.map((item) => (
@@ -59,7 +62,7 @@ export default function TopNavigation() {
                                             href={item.href}
                                             className={classNames(
                                                 'text-gray-700  hover:text-gray-900',
-                                                'px-3 py-2 rounded-md text-sm font-medium'
+                                                'px-3 py-2 rounded-md text-md font-medium'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >
@@ -72,9 +75,11 @@ export default function TopNavigation() {
                                 <div className="flex-shrink-0">
                                     <button
                                         type="button"
-                                        className="relative mx-1 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                                        className="inline-flex my-2 items-center px-6 py-2.5 border border-transparent text-xl 
+                        font-medium rounded-xl shadow-sm text-white bg-gray-900 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
-                                        <span>Get Started</span>
+                                        Get Started
                                     </button>
                                 </div>
                                 {/* <div className="flex-shrink-0">
