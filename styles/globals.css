@@ -100,3 +100,13 @@
 .bg-main {
     background-color: #F4F4F4;
 }
+
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
