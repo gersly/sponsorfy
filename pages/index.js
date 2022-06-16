@@ -88,24 +88,28 @@ export default function Home() {
 
         <div className='grid md:grid-cols-3 grid-cols-1 gap-4 items-center md:my-10 my-5'>
           <div className='md:col-span-1 col-span-1 border border-gray-100 rounded-3xl min-h-[380px]'>
-            <div className='bg-gray-100 p-6 rounded-tr-3xl rounded-tl-3xl '>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
-                Free
-              </h2>
-              <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
-                € 0
-              </h2>
-              <p className='my-3 md:text-xl text-md text-gray-500'>
-                Enough to get you started.
-              </p>
-              <button
-                type="button"
-                className="inline-flex my-2 items-center px-6 py-3 border border-gray-200 text-xl 
+            <div className='bg-gray-100 rounded-tr-3xl rounded-tl-3xl '>
+              <div className='bg-gray-100 flex items-center justify-center rounded-tr-3xl rounded-tl-3xl h-12 '>
+              </div>
+              <div className='p-6'>
+                <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
+                  Free
+                </h2>
+                <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
+                  € 0
+                </h2>
+                <p className='my-3 md:text-xl text-md text-gray-500'>
+                  Enough to get you started.
+                </p>
+                <button
+                  type="button"
+                  className="inline-flex my-2 items-center px-6 py-3 border border-gray-200 text-xl 
                         font-base rounded-full shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-              >
-                Select Free
-              </button>
+                >
+                  Select Free
+                </button>
+              </div>
             </div>
             <div className="grid grid-cols-1 gap-4 space-y-1 p-6">
               <div className='col-span-1 flex flex-row items-center text-xl h-[70px]'>
@@ -127,23 +131,30 @@ export default function Home() {
             </div>
           </div>
           <div className='md:col-span-2 col-span-1 border border-gray-100 rounded-3xl min-h-[380px]'>
-            <div className='bg-secondary-light p-6 rounded-tr-3xl rounded-tl-3xl '>
-              <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-secondary-dark'>
-                Pro
-              </h2>
-              <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-secondary-dark'>
-                € 10 <span className='text-base text-secondary-dark'>per month</span>
-              </h2>
-              <p className='my-3 md:text-xl text-md text-secondary-dark'>
-                For content creators, brands and SMBs
-              </p>
-              <button
-                type="button"
-                className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+            <div className='bg-secondary-light rounded-tr-3xl rounded-tl-3xl '>
+              <div className='bg-secondary-dark flex items-center justify-center rounded-tr-3xl rounded-tl-3xl h-12 '>
+                <p className='text-secondary-light font-medium text-lg'>
+                  <i className="ri-star-fill"></i> Recommended <i className="ri-star-fill"></i>
+                </p>
+              </div>
+              <div className='p-6'>
+                <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-secondary-dark'>
+                  Pro
+                </h2>
+                <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-secondary-dark'>
+                  € 10 <span className='text-base text-secondary-dark'>per month</span>
+                </h2>
+                <p className='my-3 md:text-xl text-md text-secondary-dark'>
+                  For content creators, brands and SMBs
+                </p>
+                <button
+                  type="button"
+                  className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
                         font-base rounded-full shadow-sm text-secondary-light bg-secondary-dark"
-              >
-                Select Pro
-              </button>
+                >
+                  Select Pro
+                </button>
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-4 space-y-1 p-6 ">
               <div className='md:col-span-1 col-span-2 flex flex-row items-center text-xl h-[70px]'>
@@ -194,7 +205,7 @@ export default function Home() {
           </div>
           <div className='md:col-span-2 col-span-4'>
             <p className='my-3 md:text-2xl text-xl text-gray-500'>
-              Trust by some names you might be familiar with 😉
+              Trusted by some names you might be familiar with
             </p>
           </div>
         </div>

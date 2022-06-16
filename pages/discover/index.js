@@ -112,50 +112,43 @@ export default function DiscoverPage() {
                                 >
 
                                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) =>
-                                        <div key={index}
-                                            className="inline-block pr-3">
-                                            <div key={index} className="w-64 h-64 max-w-xs bg-gray-50 rounded-3xl  transition-shadow duration-300"
-                                                style={{
-                                                    backgroundSize: 'cover',
-                                                    backgroundPosition: 'center center',
-                                                    backgroundImage: `url("https://storage.googleapis.com/pr-newsroom-wp/1/2022/05/SPOTIFY-PODCAST-POSTERS3-scaled.jpg")`,
+                                        <a key={index} href={"/example"}>
+                                            <div
+                                                className="inline-block pr-3">
+                                                <div key={index} className="w-64 h-64 max-w-xs bg-gray-50 rounded-3xl  transition-shadow duration-300"
+                                                    style={{
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center center',
+                                                        backgroundImage: `url("https://storage.googleapis.com/pr-newsroom-wp/1/2022/05/SPOTIFY-PODCAST-POSTERS3-scaled.jpg")`,
 
-                                                }}>
-                                                <div className="bg-gradient-to-b 
+                                                    }}>
+                                                    <div className="bg-gradient-to-b 
                                 from-gray-900  via-transparent  
                                 to-gray-900 h-full w-full rounded-3xl flex
                                 flex-col justify-between p-4">
-                                                    <p className='font-semibold text-white text-xl'>Testing 123</p>
-                                                    <div className='flex flex-row justify-between items-center'>
+                                                        <p className='font-semibold text-white text-xl'>Testing 123</p>
+                                                        <div className='flex flex-row justify-between items-center'>
 
-                                                        <div>
-                                                            <p className='font-semibold text-white font-sm'>24 episodes</p>
-                                                            <p className='font-base text-gray-400'>Content creator</p>
-                                                        </div>
-                                                        <button
-                                                            type="button"
-                                                            className="rounded-full flex flex-col 
+                                                            <div>
+                                                                <p className='font-semibold text-white font-sm'>24 episodes</p>
+                                                                <p className='font-base text-gray-400'>Content creator</p>
+                                                            </div>
+                                                            <button
+                                                                type="button"
+                                                                className="rounded-full flex flex-col 
                                                 items-center justify-center h-8 w-8
                                              text-white bg-third "
-                                                        >
-                                                            <i className="ri-play-fill ri-lg"></i>
+                                                            >
+                                                                <i className="ri-play-fill ri-lg"></i>
 
-                                                        </button>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            {/* <div
-                                                className="w-64 h-64 max-w-xs 
-                                                overflow-hidden 
-                                                rounded-3xl shadow-0
-                                                bg-gray-100 hover:shadow-md 
-                                                transition-shadow duration-300 ease-in-out"
-                                            ></div> */}
-                                        </div>
+                                        </a>
                                     )}
-
                                 </div>
-
                             </div>
                         </div>
                     )}
