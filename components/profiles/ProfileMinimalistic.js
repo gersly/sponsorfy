@@ -73,7 +73,7 @@ function ProfileMinimalistic(props) {
     }, [data, selected]);
 
     return (
-        <div className='md:min-h-screen h-auto w-screen py-[10vh]'>
+        <div className='md:min-h-screen h-auto w-screen '>
             <Head>
             </Head>
             <div className="grid grid-cols-4 gap-4 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-6 py-2">

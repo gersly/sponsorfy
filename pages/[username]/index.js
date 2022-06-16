@@ -46,7 +46,7 @@ export default function Profile({ data }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* <TopNavigation bg={'#ffffff'} /> */}
+            <TopNavigation profile={true} />
             <ProfileMinimalistic user={user} spotify={data} />
         </div>
     )
