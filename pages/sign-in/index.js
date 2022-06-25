@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import TopNavigation from '../../components/navigation/TopNavigation'
 
@@ -17,7 +18,7 @@ export default function SignInPage() {
                     <h1 className='md:text-6xl text-3xl font-bold text-gray-900 py-10'>
                         Sign In
                     </h1>
-                    <div className="rounded-md shadow-sm -space-y-px md:w-1/2 w-full">
+                    <div className="rounded-3xl -space-y-px md:w-1/2 w-full">
                         {/* <div>
                             <label htmlFor="email-address" className="sr-only">
                                 Email address
@@ -34,9 +35,9 @@ export default function SignInPage() {
                                 placeholder="Email address"
                             />
                         </div> */}
-                        <div className=" w-full flex rounded-3xl shadow-sm">
+                        <div className=" w-full flex rounded-3xl">
                             <span className="inline-flex items-center px-6 outline-none  rounded-r-none rounded-t-3xl border border-r-0 border-gray-300 bg-gray-200 text-gray-500 md:text-xl text-lg">
-                                avertise.li/
+                                spons.io/
                             </span>
                             <input
                                 type="text"
@@ -65,11 +66,17 @@ export default function SignInPage() {
                         <div className='py-10'>
                             <button
                                 type="button"
-                                className="w-full inline-flex justify-center items-center md:px-8 md:py-4 px-6 py-3 border border-transparent text-xl font-base rounded-full shadow-sm 
+                                className="w-full inline-flex justify-center items-center  px-6 py-3 border border-transparent text-xl font-base rounded-full shadow-sm 
                         text-white bg-gray-900"
                             >
                                 Sign In
                             </button>
+
+                        </div>
+                        <div className='py-5 text-center'>
+                            <Link href="/forgot-password">
+                                Forgot password?
+                            </Link>
                         </div>
                     </div>
                 </div>

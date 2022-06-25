@@ -36,7 +36,7 @@ export default function LandingPageHeader() {
                         <Link href="/create-profile">
                             <button
                                 type="button"
-                                className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+                                className="inline-flex my-2 items-center px-3 py-1.5 border border-transparent text-xl 
                         font-base rounded-full shadow-sm text-secondary-dark bg-secondary-light"
                             >
                                 Create my profile
@@ -46,7 +46,7 @@ export default function LandingPageHeader() {
                             <button
 
                                 type="button"
-                                className="inline-flex my-2 items-center px-6 py-3 border border-gray-200 text-xl 
+                                className="inline-flex my-2 items-center px-3 py-1.5 border border-gray-200 text-xl 
                             font-base rounded-full shadow-sm text-gray-900 bg-gray-100 "
                             >
                                 View example
