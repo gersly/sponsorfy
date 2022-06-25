@@ -9,7 +9,7 @@ const user = {
 }
 const navigation = [
     { name: 'Discover Creators', href: '/discover', current: false },
-    { name: 'Pricing', href: '/#pricing', current: false },
+    { name: 'Pricing', href: '/pricing', current: false },
     { name: 'Blog', href: '#', current: false }
 ]
 const userNavigation = [
