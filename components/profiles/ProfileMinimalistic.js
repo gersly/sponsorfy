@@ -178,14 +178,14 @@ function ProfileMinimalistic(props) {
                         <div className='grid grid-cols-3 gap-4 w-full'>
                             <button
                                 type="button"
-                                className="col-span-2 inline-flex justify-center items-center px-6 py-3 border border-transparent text-xl font-medium rounded-full shadow-sm 
+                                className="col-span-2 inline-flex justify-center items-center  px-3 py-1.5 border border-transparent text-xl font-medium rounded-full shadow-sm 
                         text-white bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
                                 Pay Now
                             </button>
                             <button
                                 type="button"
-                                className="inline-flex items-center justify-center px-6 py-3 border border-gray-200 text-xl font-medium rounded-full shadow-sm 
+                                className="inline-flex items-center justify-center  px-3 py-1.5 border border-gray-200 text-xl font-medium rounded-full shadow-sm 
                         text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
                                 Explore

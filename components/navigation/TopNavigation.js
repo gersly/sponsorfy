@@ -9,7 +9,7 @@ const user = {
 }
 const navigation = [
     { name: 'Discover Creators', href: '/discover', current: false },
-    { name: 'Pricing', href: '#', current: false },
+    { name: 'Pricing', href: '/#pricing', current: false },
     { name: 'Blog', href: '#', current: false }
 ]
 const userNavigation = [
@@ -42,10 +42,10 @@ export default function TopNavigation(props) {
                                     <Link href="/">
                                         <button
                                             type="button"
-                                            className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+                                            className="inline-flex my-2 items-center  px-3 py-1.5 border border-transparent text-xl 
                         font-base rounded-full shadow-sm text-gray-900 bg-gray-200 hover:bg-gray-300"
                                         >
-                                            <i className="ri-arrow-left-line mr-1"></i>Sponsorfy
+                                            <i className="ri-arrow-left-line mr-1"></i>Sponsio
                                         </button>
                                     </Link>
                                 </div>
@@ -87,7 +87,7 @@ export default function TopNavigation(props) {
                                     </div>
                                     <div className="flex-shrink-0 flex items-center">
                                         <Link href="/">
-                                            <p className='text-gray-900 text-xl cursor-pointer'>Sponsorfy</p>
+                                            <p className='text-gray-900 text-xl cursor-pointer'>Sponsio</p>
                                         </Link>
                                     </div>
                                     <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
@@ -110,10 +110,10 @@ export default function TopNavigation(props) {
                                     <div className="flex-shrink-0">
                                         <button
                                             type="button"
-                                            className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
+                                            className="inline-flex items-center px-3 py-1.5 border border-transparent text-xl 
                         font-base rounded-full shadow-sm text-secondary-dark bg-secondary-light"
                                         >
-                                            Get Started
+                                            Get started
                                         </button>
                                     </div>
                                 </div>

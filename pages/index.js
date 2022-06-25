@@ -68,7 +68,7 @@ export default function Home() {
               <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-third-dark'>
                 Custom pricing
               </h2>
-              <p className='my-3 md:text-xl text-md text-white'>
+              <p id="pricing" className='my-3 md:text-xl text-md text-white'>
                 Do you have multiple ad slots per episode or article ? Feel free to
                 adjust pricing as you see fit.
               </p>
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       {/* End of Features Section */}
       {/* Pricing Section */}
-      <div className='h-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5'>
+      <div className='h-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-10'>
         <h1 className='md:text-6xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
           Pricing
         </h1>
@@ -103,11 +103,11 @@ export default function Home() {
                 </p>
                 <button
                   type="button"
-                  className="inline-flex my-2 items-center px-6 py-3 border border-gray-200 text-xl 
+                  className="inline-flex my-2 items-center px-3 py-1.5 border border-gray-200 text-xl 
                         font-base rounded-full shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                 >
-                  Select Free
+                  Select Free <i className="ri-arrow-right-line mx-1"></i>
                 </button>
               </div>
             </div>
@@ -149,10 +149,10 @@ export default function Home() {
                 </p>
                 <button
                   type="button"
-                  className="inline-flex my-2 items-center px-6 py-3 border border-transparent text-xl 
-                        font-base rounded-full shadow-sm text-secondary-light bg-secondary-dark"
+                  className="inline-flex my-2 items-center px-3 py-1.5 border border-transparent text-xl 
+                        font-base rounded-full shadow-sm text-secondary-light bg-secondary-dark "
                 >
-                  Select Pro
+                  Select Pro <i className="ri-arrow-right-line mx-1"></i>
                 </button>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function Home() {
               </div>
               <div className='md:col-span-1 col-span-2 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-check-line text-green-500 mr-4  text-2xl"></i>
-                <p>Hide Sponsorfy Logo</p>
+                <p>Hide Sponsio Logo</p>
               </div>
             </div>
 
