@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch-css": "npx tailwindcss -i ./styles/globals.css -o ./public/main.css --watch"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import { RadioGroup } from '@headlessui/react'
 
-import Image from 'next/image'
+import Link from 'next/link'
 import axios from 'axios'
 
 const settings = [
@@ -78,18 +78,7 @@ function ProfileMinimalistic(props) {
             </Head>
             <div className="grid grid-cols-4 gap-4 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-6 py-2">
                 <div className='md:col-span-2 col-span-4 flex flex-col items-start justify-start space-y-5'>
-                    {/* <div
-                        className='md:h-full md:w-full h-[200px] w-full'
-                        style={{
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: 'contain',
-                            backgroundPosition: 'center center',
-                            // backgroundImage: `url(${user.shows[0].poster})`,
-                            backgroundImage: `${spotify.thumbnail_url}`
 
-                        }}>
-
-                    </div> */}
                     <h2 className='md:text-6xl text-3xl font-semibold text-gray-900 '>{spotify.title}</h2>
                     <p className='md:text-lg text-md font-base text-gray-700'>on {spotify.provider_name}</p>
                     <p className='md:text-xl text-lg font-base text-gray-500'>Enim in mollit dolore sint reprehenderit
@@ -174,21 +163,26 @@ function ProfileMinimalistic(props) {
                                 ))}
                             </div>
                         </RadioGroup>
-                        <h3 className='md:text-6xl text-3xl font-semibold text-gray-900 md:py-10 py-5'>€{selected.price} <span className='text-xl text-gray-400 font-base'>per episode</span></h3>
+                        <h3 className='md:text-6xl text-3xl font-bold text-gray-900 md:py-10 py-5'>€{selected.price}
+                            <span className='text-xl text-gray-900 font-base'> per episode</span>
+                            <span className='text-lg text-gray-400 font-medium'> + €2.99 service fee</span>
+                        </h3>
                         <div className='grid grid-cols-3 gap-4 w-full'>
-                            <button
-                                type="button"
-                                className="col-span-2 inline-flex justify-center items-center  px-3 py-1.5 border border-transparent text-xl font-medium rounded-full shadow-sm 
+                            <Link href="/checkout/123456" >
+                                <button
+                                    type="button"
+                                    className="col-span-2 inline-flex justify-center items-center  px-3 py-1.5 border border-transparent text-xl font-medium rounded-full shadow-sm 
                         text-white bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
-                            >
-                                Pay Now
-                            </button>
+                                >
+                                    Pay Now
+                                </button>
+                            </Link>
                             <button
                                 type="button"
                                 className="inline-flex items-center justify-center  px-3 py-1.5 border border-gray-200 text-xl font-medium rounded-full shadow-sm 
                         text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-800"
                             >
-                                Explore
+                                Message
                             </button>
                         </div>
                         <div className='md:py-10 py-5 w-full items-center justify-center flex flex-col space-y-2'>

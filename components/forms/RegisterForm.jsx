@@ -9,7 +9,8 @@ function RegisterForm(props) {
     return (
         <div>
             <div className='h-full w-full'>
-                <div className='h-auto md:max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5 items-center flex flex-col'>
+                <div className='h-auto max-w-7xl w-full mx-auto 
+                px-4 sm:px-6 lg:px-8 md:py-10 py-5 items-center flex flex-col'>
                     <h1 className='md:text-6xl text-3xl font-bold text-gray-900 py-10'>
                         {title || "Register"}
                     </h1>

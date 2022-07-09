@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap'); */
 
 .bg-main {
     border: 0px;
@@ -17,14 +18,16 @@
 }
 
 @layer base {
-    html {
+
+    html,
+    body {
         font-family: 'Inter'
     }
 
     /* h1,
     h2,
     h3 {
-        font-family: 'Staatliches'
+        font-family: 'Lexend'
     } */
 }
 
