@@ -18,7 +18,7 @@ export default function PricingPage() {
                         Pricing
                     </h1>
                     <p className='my-3 md:text-2xl text-xl text-gray-500'>
-                        Sponsio is still in alpha. <br />Create a <b>FREE</b> account and start earning money through sponsorships.
+                        Sponsio is still in the alpha phase. <br />Create a <b>FREE</b> account and start earning money through sponsorships.
                     </p>
                     <Link href="/create-profile">
                         <button
