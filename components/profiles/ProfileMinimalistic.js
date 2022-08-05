@@ -42,7 +42,7 @@ function classNames(...classes) {
 
 function ProfileMinimalistic(props) {
     const { user, spotify } = props
-    console.log(spotify)
+    // console.log(spotify)
     const [selected, setSelected] = useState(settings[0])
     const [data, setData] = useState({})
 
@@ -90,7 +90,7 @@ function ProfileMinimalistic(props) {
 
                     <div className='bg-white rounded-3xl px-6 py-2 grid grid-cols-2 gap-2 items-center w-full'>
                         {showData.map((item, index) =>
-                            <div className='w-full h-[6vh] col-span-2 grid grid-cols-2 gap-2 items-center' key={index}>
+                            <div className='w-full h-[60px] col-span-2 grid grid-cols-2 gap-2 items-center' key={index}>
                                 <div className='md:col-span-1 col-span-1 text-gray-800'>
                                     <p className='font-medium text-lg'>{item.name}</p>
                                 </div>
