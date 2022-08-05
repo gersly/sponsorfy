@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className='p-6'>
                 <h2 className='md:text-3xl text-2xl font-[700] md:w-[85%] w-full text-gray-800'>
-                  Free
+                  Starter
                 </h2>
                 <h2 className='md:text-4xl text-3xl font-[700] md:w-[85%] w-full text-gray-800'>
                   € 0
@@ -107,14 +107,14 @@ export default function Home() {
                         font-base rounded-full shadow-sm text-gray-900 bg-gray-100 hover:bg-gray-200 
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                 >
-                  Select Free <i className="ri-arrow-right-line mx-1"></i>
+                  Select Starter <i className="ri-arrow-right-line mx-1"></i>
                 </button>
               </div>
             </div>
             <div className="grid grid-cols-1 gap-4 space-y-1 p-6">
               <div className='col-span-1 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-check-line text-green-500 mr-4 text-2xl"></i>
-                <p>A link to share everywhere</p>
+                <p>1 Ad sales per episode</p>
               </div>
               <div className='col-span-1 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-check-line text-green-500 mr-4  text-2xl"></i>
@@ -124,6 +124,7 @@ export default function Home() {
                 <i className="ri-check-line text-green-500 mr-4  text-2xl"></i>
                 <p>All payment methods</p>
               </div>
+
               <div className='col-span-1 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-close-circle-fill text-red-500 mr-4  text-2xl"></i>
                 <p>Custom templates</p>
@@ -159,7 +160,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4 space-y-1 p-6 ">
               <div className='md:col-span-1 col-span-2 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-check-line text-green-500 mr-4  text-2xl"></i>
-                <p>A link to share everywhere</p>
+                <p>Unlimited Ad sales per episode</p>
               </div>
               <div className='md:col-span-1 col-span-2 flex flex-row items-center text-xl h-[70px]'>
                 <i className="ri-check-line text-green-500 mr-4  text-2xl"></i>
@@ -210,7 +211,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid md:grid-cols-6 grid-cols-2 md:gap-4 gap-2 flex-col justify-center items-center md:py-10 py-5">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((testimonial, index) => <TestimonialsCircle key={index} index={index} />)}
+          {[1, 2, 3, 4, 5, 6].map((testimonial, index) => <TestimonialsCircle key={index} index={index} />)}
         </div>
       </div>
 
